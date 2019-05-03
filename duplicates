@@ -1,0 +1,10 @@
+class Sol:
+    def duplicates(self,list,k):
+        for i in range(len(list)-k):
+            if list[i]==list[i+k]:
+                return True
+        return False
+
+if __name__ == '__main__':
+    p1=Sol()
+    print(p1.duplicates([91,2,3,1],3))
